@@ -12,11 +12,9 @@ let messages = [
 
 let newMessage = "Same here!"
 
-messages.push(newMessage)
+messages.push(newMessage) // adding an element at the end of an array
 
 messages[0] = "hi"
 
-messages.pop()
+messages.pop() // remove an element from the end of an array
 console.log(messages)
-
-messages.
