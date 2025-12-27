@@ -12,6 +12,13 @@ let course = {
 }
 
 
-console.log( course.isFree)
+console.log( course.tags[0])
+
+console.log( course.tags[1])
+
+for ( let i = 0; i < course.tags.length; i++) {
+    console.log( course.tags[i] )
+}
+
 
 
