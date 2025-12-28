@@ -5,3 +5,17 @@ let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
 
 // Use push() & pop() and their counterparts unshift() & shift()
 // Google how to use unshift() and shift()
+
+largeCountries.shift()
+largeCountries.unshift("China")
+largeCountries.pop()
+largeCountries.push("Pakistan")
+
+console.log(largeCountries)
+// should log: ["China","India","USA","Indonesia","Pakistan"]
+
+for (let i of largeCountries) {
+    console.log("- " + i)
+}
+
+// shift() and unshift() are basically the “pop” and “push” for the front of the array.

@@ -6,3 +6,11 @@ let orangeShelf = document.getElementById("orange-shelf")
 // and the oranges onto the orangeShelf. Use a for loop,
 // a conditional statement, and the textContent property.
 
+for (let i of fruit) {
+    if (i === "🍎") {
+        appleShelf.textContent += i 
+    } else if (i === "🍊") {
+        orangeShelf.textContent += i
+    }    
+}
+
