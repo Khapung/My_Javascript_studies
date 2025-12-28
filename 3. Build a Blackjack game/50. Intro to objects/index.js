@@ -12,13 +12,15 @@ let course = {
 }
 
 
-console.log( course.tags[0])
+// console.log( course.tags[0])
 
-console.log( course.tags[1])
+// console.log( course.tags[1])
 
-for ( let i = 0; i < course.tags.length; i++) {
-    console.log( course.tags[i] )
+// for ( let i = 0; i < course.tags.length; i++) {
+//     console.log( course.tags[i] )
+// }
+
+
+for ( let tag of course.title ) {
+    console.log( tag )
 }
-
-
-
