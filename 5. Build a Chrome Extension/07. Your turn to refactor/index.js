@@ -6,4 +6,8 @@ function saveLead() {
 }
 
 
+let saveLeadBtn = document.getElementById("input-btn")
 
+saveLeadBtn.addEventListener("click", function() {
+    saveLead()
+})
