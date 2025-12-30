@@ -1,4 +1,4 @@
-let myLeads = []
+let myLeads = ["site1.com", "site2.com", "site3.com"]
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 
@@ -7,8 +7,9 @@ inputBtn.addEventListener("click", function() {
     console.log(myLeads)
 })
 
-
 // Log out the items in the myLeads array using a for loop 
 
-
+for (let i of myLeads) {
+    console.log(i)
+}
 
