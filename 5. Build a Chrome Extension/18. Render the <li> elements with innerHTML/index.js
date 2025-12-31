@@ -9,8 +9,8 @@ inputBtn.addEventListener("click", function() {
 })
 
 // Replace .textContent with .innerHTML and use <li> tags
-for (let i = 0; i < myLeads.length; i++) {
-    ulEl.textContent += myLeads[i] + " "
+for (let i of myLeads) {
+    ulEl.innerHTML += "<li>" + i + "</li>"
 }
 
 
