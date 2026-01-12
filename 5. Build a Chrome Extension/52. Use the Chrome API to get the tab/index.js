@@ -1,3 +1,5 @@
+const { act } = require("react")
+
 let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
@@ -11,23 +13,20 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
-const tabs = [
-    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
-]
-
+// const tabs = [
+//     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+// ]
 
 tabBtn.addEventListener("click", function(){
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        console.log(tabs)
-        // since only one tab should be active and in the current window at once
-        // the return variable should only have one entry
-        let activeTab = tabs[0]
-        let activeTabId = activeTab.id // or do whatever you need
-    })
     
-    myLeads.push(tabs[0].url)
-    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
-    render(myLeads)
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        console.log(tabs)
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+        render(myLeads)
+    
+    })
+
     
 })
 
